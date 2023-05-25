@@ -1,14 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home";
 import ModalTest1 from "./Pages/ModalTest1";
 import ModalTest2 from "./Pages/ModalTest2";
 import Modal from "./Components/Modal";
 import EmojiModal from "./Components/EmojiModal";
-import Main from "./Main";
-import SignIn from "./SignIn";
-import SignUp from "./SignUp";
+import Main from "./Pages/Main";
+import SignIn from "./Pages/SignIn";
+import SignUp from "./Pages/SignUp";
 import Calendar from "./Calendar";
-import Diary from "./Diary";
+import Diary from "./Components/Diary";
+
 
 function Router() {
     return (
@@ -22,8 +22,7 @@ function Router() {
                 <Route path="/SignUp" element={<SignUp />} />
                 <Route path="/SignIn" element={<SignIn />} />
                 <Route path="/Calendar" element={<Calendar />} />
-                // 수정된 부분
-                <Route path="/Diary" element={<Diary />} /> // 수정된 부분
+                <Route path="/Diary" element={<Diary />} />
             </Routes>
         </BrowserRouter>
     );

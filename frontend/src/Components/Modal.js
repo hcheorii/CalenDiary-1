@@ -3,8 +3,10 @@ import { useState } from 'react';
 import styled from "styled-components";
 import {BiHappyAlt} from "react-icons/bi"
 import EmojiModal from "./EmojiModal";
+import Datepicker from "./Datepicker";
 
-function Modal({ onClose, appname, date }) {
+
+function Modal({ onClose, date }) {
   const handleClose = () => {
     onClose?.();
   };
@@ -96,25 +98,7 @@ function Modal({ onClose, appname, date }) {
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUp}>
-          {appname === 'calendar' ? (
           <Contents>
-             <Button onClick={handleClose}>닫기</Button>
-            <div className="Header" style={{marginBottom: "0.3rem"}}>
-              <button 
-                onClick={onClick}
-                style={{border:"none",
-                        margin: "0",
-                        padding: "0",
-                        cursor:"pointer"}}>
-              </button>
-              <p>캘린더 일정 어떻게 추가?</p>
-            </div>
-            <div className="dateBox">
-                <p className="dateName">{date[0].year}년 {date[0].month}월 {date[0].day}일</p>
-            </div>
-          </Contents>
-          ) :
-          (<Contents>
             <Button onClick={handleClose}>닫기</Button>
             <div className="Header" style={{marginBottom: "0.3rem"}}>
               <button 
@@ -163,8 +147,6 @@ function Modal({ onClose, appname, date }) {
                   />
               </form>
           </Contents>
-          )
-          }
         </ModalWrap>
       </div>
   );
@@ -214,16 +196,31 @@ const Contents = styled.div`
 `;
 const Button = styled.button`
   float: right;
-  margin-top: 8px;
   margin-right: 15px;
   border: none;
   color: black;
   font-weight: 200;
+  font-size: 11px;
   cursor: pointer;
   &:hover {
     text-shadow: 1px 1px 1px gray;
   }
 `;
+
+const CalBox = styled.div`
+  width: 100%;
+  height: 25%;
+  align-items: flex-start;
+  p {
+    margin-bottom: 2px;
+    font-size: 10px;
+    justify-content: flex-start;
+    font-weight: lighter;
+    padding-left: 2px;
+  }
+`;
+
+
 
 const Input = styled.textarea`
   all: unset;
