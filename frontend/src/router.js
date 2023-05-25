@@ -6,7 +6,7 @@ import EmojiModal from "./Components/EmojiModal";
 import Main from "./Pages/Main";
 import SignIn from "./Pages/SignIn";
 import SignUp from "./Pages/SignUp";
-import Calendar from "./Calendar";
+import Calendar from "./Components/Calendar";
 import Diary from "./Components/Diary";
 
 

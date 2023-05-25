@@ -5,11 +5,11 @@ const Diary = () => {
         <>
             <ResponsiveAppBar />
             <div className="Calendar">
-                <div className="profile">
-                    <img
-                        class="image"
-                        src="https://www.outsourcing.co.kr/news/photo/202207/94329_33313_5523.jpg"
-                    />
+            <div className="profile">
+                    <div
+                        className="image"
+                    >
+                    </div>
                     <h1>TaeKyu Lee</h1>
                     <h3>Chief Executive Offic</h3>
                 </div>

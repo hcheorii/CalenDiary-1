@@ -8,7 +8,7 @@ import { Modal } from "@mui/material";
 class MyCalendar extends Component {
     state = {
         isModalOpen: false,
-        newEventTitle: "",
+        currentEvents: []
     };
 
     date = ({
@@ -19,9 +19,9 @@ class MyCalendar extends Component {
 
     handleEvents = (events) => {
     // 이벤트가 실행된 후 변경된 상태를 현재 상태에 반영
-        // this.setState({
-        //   currentEvents: events,
-        // });
+        this.setState({
+          currentEvents: events,
+        });
         console.log("handleEvents")
     };
 
@@ -68,10 +68,6 @@ class MyCalendar extends Component {
                     selectable={true}
                     events={[
                         { title: "event 1", date: "2022-09-01" },
-                        { title: "event 2", date: "2022-09-02" },
-                        { title: "event 2asda", date: "2023-04-10" },
-                        { title: "asdadsa", date: "2023-04-11" },
-                        { title: "asdasa", date: "2023-04-12" },
                     ]}
                     eventClick={this.handleEventClick}
                     select={this.handleDateSelect}

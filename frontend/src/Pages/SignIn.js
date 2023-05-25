@@ -58,7 +58,7 @@ const SignIn = () => {
                     <h2>Welcome back!</h2>
                     <h5 style={{fontWeight: "400"}}>
                         Or{" "}
-                        <a href="frontend/src/Pages/SignUp.js"
+                        <a href="/SignUp"
                             style={{color: "white", 
                                 fontWeight: "bold", 
                                 textDecorationLine: "none"}}

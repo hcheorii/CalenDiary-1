@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: space-between;
     opacity: 0.5;
-    background-image: url("Images/main_wallpaper.svg" );
+    background-image: url("./Images/main_wallpaper.svg" );
     background-position: 48%;
 }
 .navbar Button {
@@ -133,6 +133,9 @@
     width: 50%;
     display: block;
     margin: auto;
+    background-image: url("./Images/signin.svg");
+    width: 200px;
+    height: 200px
 }
 
 .MyCalendar {
