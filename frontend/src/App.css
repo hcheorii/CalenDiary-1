@@ -7,6 +7,8 @@
     align-items: center;
     justify-content: space-between;
     opacity: 0.5;
+    background-image: url("./Images/main_wallpaper.svg" );
+    background-position: 48%;
 }
 .navbar Button {
     margin: 10px;
@@ -19,6 +21,7 @@
     color: white;
 }
 .Main {
+    width: 100%;
     height: 100%;
     margin: auto;
     flex-direction: column;
@@ -30,12 +33,13 @@
     background-size: cover;
 }
 .menu_buttons {
+    height: 5vh;
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
     margin: 0 0 100px 0;
     display: flex;
     flex-direction: column;
@@ -53,6 +57,9 @@
     align-items: center;
     justify-content: center;
     height: 100vh; /* 또는 원하는 높이 값 */
+    background-image: url("./Images/signin.svg");
+    text-align: center;
+    background-size: cover;
 }
 
 /* Sign up */
@@ -100,6 +107,7 @@
     color: blue;
 }
 .Calendar {
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -119,11 +127,15 @@
     border-radius: 20px;
     margin-left: 15px;
 }
+
 .image {
     border-radius: 70%;
     width: 50%;
     display: block;
     margin: auto;
+    background-image: url("./Images/signin.svg");
+    width: 200px;
+    height: 200px
 }
 
 .MyCalendar {
